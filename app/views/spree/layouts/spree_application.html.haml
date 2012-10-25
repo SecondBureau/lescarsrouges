@@ -1,0 +1,97 @@
+!!! 5
+%html
+  %head
+    %title Visite de Paris en Bus - Cars Rouges
+    = stylesheet_link_tag    "application", :media => "all"
+    :javascript
+      MY_RUB=new Array();
+      MY_DIAPORAMA=false;
+      MY_MAP=false;
+      CLASS_SELECT="selected";
+      MY_DATE="date_renseignee";
+      LANGUAGE = "/_fr/";
+      PATH_ROOT = "/";
+      MY_RUB[0] = "content";
+      MY_RUB[1] = "index";
+
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+
+
+
+  %body
+    #part1
+      #bloc_main
+        #bloc_header
+          #bloc_header_part1
+            %h1
+              = link_to " ", '/', :class => 'visu', :title => "Retour sur la page d'accueil"
+            %ul#main-menu
+              %li.main-li
+                %a{:href => "/content/circuit/index.php"} Le circuit
+              %li.main-li
+                %a{:href => "/content/infos/index.php"} Les informations pratiques
+                /[if IE 7]
+                  <link type="text/css" rel="stylesheet" href="../../css/ie7_debug.css"/>
+                  <br /><br />
+                %ul.ssmenu-header
+                  %li#ballade
+                    %a{:href => "content/infos/ballade.php"} La balade en quelques mots
+                  %li#audio_guides
+                    %a{:href => "content/infos/audio_guides.php"} Les audio guides
+                  %li#horaires
+                    %a{:href => "content/infos/horaires.php"} Horaires
+                  %li#visite_groupes
+                    %a{:href => "content/infos/visite_groupes.php"} Visites en groupe
+                  %li#location_bus
+                    %a{:href => "content/infos/location_bus.php"} Locations de bus
+              %li.main-li
+                %a{:href => "/content/billet/index.php"} Reservations en ligne
+            #header_languages
+              .clearb
+              %form#change_languages{:action => "http://www.carsrouges.com/", :method => "post", :name => "change_languages"}
+                /
+                  <label for="languages">Langues</label>
+                  <br />
+                %a{:href => "http://www.carsrouges.fr/"}
+                  %img.lang.lang_selected{:alt => "Fran&ccedil;ais", :src => "/assets/icons/fr.png"}/
+                %a{:href => "http://www.carsrouges.com/?languages=en"}
+                  %img.lang{:alt => "Anglais", :src => "/assets/icons/en.png"}/
+                %a{:href => "http://www.carsrouges.es/"}
+                  %img.lang{:alt => "Espagnol", :src => "/assets/icons/es.png"}/
+                %a{:href => "http://www.carsrouges.de/"}
+                  %img.lang{:alt => "Allemand", :src => "/assets/icons/de.png"}/
+                %a{:href => "http://www.carsrouges.it/"}
+                  %img.lang{:alt => "Italien", :src => "/assets/icons/it.png"}/
+                /
+                  <select name="languages" id="languages">
+                  <option value="">-</option>
+                  <option value="es" >Espagnol</option>
+                  <option value="it" >Italien</option>
+                  <option value="de" >Allemand</option>
+                  </select>
+                %p.button0
+                  %img{:alt => "", :src => "/assets/common/button_form_partLeft.gif"}/
+                  %input#valide_langue{:name => "valide_langue", :type => "submit", :value => "ok"}/
+                  %img{:alt => "", :src => "/assets/common/button_form_partRight.gif"}/
+        / /Header
+        #bloc_central
+          = yield
+          .clear
+        / /Contenu Central
+    #part2
+      / Footer
+      #bloc_footer
+        %ul{:style => "width: 670px; "}
+          %li.first
+            %a{:href => "/content/transverse/plan_du_site.php"} Plan du site
+          %li
+            %a{:href => "/content/transverse/qui_sommes_nous.php"} Qui sommes-nous
+          %li
+            %a{:href => "/content/transverse/contact.php"} Contactez-nous
+          %li
+            %a{:href => "/content/transverse/conditions_generales_de_vente.php"} Conditions g&eacute;n&eacute;rales de vente
+          %li
+            %a{:href => "/content/transverse/faq.php"} FAQ
+          %li

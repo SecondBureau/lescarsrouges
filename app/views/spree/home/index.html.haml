@@ -1,0 +1,416 @@
+.div1
+  .div2
+    .div3
+      .div4
+        / Contenu Central
+        #bloc_central
+          / Ligne Push Num1
+          #bloc_diaporama
+            #push1.push
+              .homeslider-controls
+                %a#control-5{:href => "#", :rel => "5"} 5
+                %a#control-4{:href => "#", :rel => "4"} 4
+                %a#control-3{:href => "#", :rel => "3"} 3
+                %a#control-2{:href => "#", :rel => "2"} 2
+                %a#control-1{:href => "#", :rel => "1"} 1
+              %ul#home-carousel.jcarousel-skin-home.invisible
+                %li{:alt => "slide", :style => "background:url(assets/sliders/home/carrousel_1.jpg) no-repeat;cursor:pointer;"}/
+                %span.link_slide content/billet/etape1.php
+                %h4 OFFRE SPECIALE
+                %p Beneficiez d'une remise de 10% pour tout achat en ligne!
+                %li{:alt => "slide", :style => "background:url(assets/sliders/home/carrousel_2.jpg) no-repeat;cursor:pointer;"}/
+                %span.link_slide content/billet/etape1.php
+                %h4 PARIS AU RYTHME DE VOS ENVIES
+                %p Une utilisation illimitee du Pass pendant 2 jours consecutifs
+                %li{:alt => "slide", :style => "background:url(assets/sliders/home/carrousel_3.jpg) no-repeat;cursor:pointer;"}/
+                %span.link_slide content/billet/etape1.php
+                %h4 UNE EXPERIENCE TOURISTIQUE INOUBLIABLE
+                %p Visitez Paris en bus et en bateau grace a notre Pass Bus &amp; Croisiere a prix reduit!
+                %li{:alt => "slide", :style => "background:url(assets/sliders/home/carrousel_4.jpg) no-repeat;cursor:pointer;"}/
+                %span.link_slide content/infos/ballade.php
+                %h4 LE MEILLEUR MOYEN DE DeCOUVRIR PARIS
+                %p Une visite complete de Paris en 2h15. Des bus a 2 etages offrant une vue panoramique. De nombreux arrets pour monter et descendre librement !
+                %li{:alt => "slide", :style => "background:url(assets/sliders/home/carrousel_5.jpg) no-repeat;cursor:pointer;"}/
+                %span.link_slide content/infos/ballade.php
+                %h4 NOTRE OBJECTIF : VOTRE SATISFACTION!
+                %p Visite commentee en 9 langues, un bus toutes les 10 minutes , hotesses a bord pour vous accueillir, service assure 7/7 jours, toute l'annee!
+            #push2fr.push.push2
+              %form#module_search{:action => "/products/billet-cars-rouges-adulte", :method => "get", :name => "module_search"}
+                %input{:name => "init", :type => "hidden", :value => "1"}/
+                %p.text
+                  %label{:for => "qte0"} Adultes
+                  %input#qte0.text.size2max{:maxlength => "2", :name => "qte0", :type => "text", :value => ""}/
+                %p.text
+                  %label{:for => "qte1"} Enfants
+                  %input#qte1.text.size2max{:maxlength => "2", :name => "qte1", :type => "text", :value => ""}/
+                %p.date.datechooser
+                  %label{:for => "date_renseignee"} Date de visite
+                  %input#date_renseignee.datechooser{:class => "dc-dateformat='j/m/Y' dc-iconlink='/assets/icons/icon_calendar.gif' dc-weekstartday='1' dc-startdate='10252012' dc-latestdate='12312020' dc-earliestdate='10252012' dc-onupdate='FunctionEx6'", :name => "date_renseignee", :type => "text", :value => "25/10/2012"}/
+                %p.button_continue
+                  %input{:src => "/assets/buttons/btn_continue_fr.gif", :type => "image"}/
+                  / <input type="submit" style="url(../image/buttons/btn_continue_fr.gif) no-repeat;" name="submitBillet0" id="submitBillet0" />
+          / /Ligne Push Num1
+          / Ligne Push Num2
+          #push_news
+            %p.titre
+              %a{:href => "/actu/"} Dernieres actualites
+            .liste_content
+              %ul#defile.liste{:onmouseover => "{timer}"}
+                %li
+                  %a{:href => "/actu/Venez-decouvrir-les-arts-de-la-table-chinoise-au-Musee-du-Quai-Branly--187.html"}
+                    %span.date 25.07.2012
+                    %h2 Venez d&eacute;couvrir les arts ...
+                %li
+                  %a{:href => "/actu/Ne-ratez-pas-l-exposition-a-l-Hotel-de-ville-C-etaient-des-enfants--184.html"}
+                    %span.date 05.07.2012
+                    %h2 Ne ratez pas l'exposition...
+                %li
+                  %a{:href => "/actu/Artemisia-le-destin-d-une-femme-peu-ordinaire-aux-talents-extraordinaires-183.html"}
+                    %span.date 27.04.2012
+                    %h2 Art&eacute;misia, le destin d'un...
+                %li
+                  %a{:href => "/actu/Changement-de-tarifs-180.html"}
+                    %span.date 13.04.2012
+                    %h2 Changement de tarifs
+                %li
+                  %a{:href => "/actu/Ne-ratez-pas-la-nouvelle-exposition-Maya-au-musee-du-quai-Branly-178.html"}
+                    %span.date 23.09.2011
+                    %h2 Ne ratez pas la nouvelle ...
+                %li
+                  %a{:href => "/actu/Croisiere-promenade-au-bord-de-l-eau-175.html"}
+                    %span.date 28.08.2011
+                    %h2 Croisi&egrave;re promenade au b...
+                %li
+                  %a{:href => "/actu/L-evenement-de-cet-ete-Paris-Plage-173.html"}
+                    %span.date 03.08.2011
+                    %h2 L'&eacute;v&eacute;nement de cet &eacute;t&eacute;: P...
+                %li
+                  %a{:href => "/actu/Une-expo-avec-un-enorme-succes-Paris-au-temps-des-impressionnistes--170.html"}
+                    %span.date 17.06.2011
+                    %h2 Une expo avec un &eacute;norme s...
+                %li
+                  %a{:href => "/actu/Vous-avez-aime-voyager-avec-Les-Cars-Rouges-et-le-faites-savoir--167.html"}
+                    %span.date 03.06.2011
+                    %h2 Vous avez aim&eacute; voyager av...
+                %li
+                  %a{:href => "/actu/Ou-trouver-la-meilleure-baguette-de-Paris--165.html"}
+                    %span.date 04.05.2011
+                    %h2 O&ugrave; trouver la meilleure b...
+                %li
+                  %a{:href => "/actu/Terrasses-a-Paris-161.html"}
+                    %span.date 09.04.2011
+                    %h2 Terrasses &agrave; Paris
+                %li
+                  %a{:href => "/actu/Changement-de-tarifs-158.html"}
+                    %span.date 03.04.2011
+                    %h2 Changement de tarifs
+                %li
+                  %a{:href => "/actu/Quand-Paris-ecrit-l-Histoire--156.html"}
+                    %span.date 13.03.2011
+                    %h2 Quand Paris &eacute;crit l'Histo...
+                %li
+                  %a{:href => "/actu/Venez-decouvrir-le-Petit-Palais--154.html"}
+                    %span.date 07.02.2011
+                    %h2 Venez d&eacute;couvrir le Petit ...
+                %li
+                  %a{:href => "/actu/Vous-avez-aime-voyager-a-bord-de-nos-bus-et-le-faites-savoir--153.html"}
+                    %span.date 07.02.2011
+                    %h2 Vous avez aim&eacute; voyager &agrave; ...
+                %li
+                  %a{:href => "/actu/Excursions-touristiques-Versailles-Chateaux-de-la-Loire-Giverny--151.html"}
+                    %span.date 24.01.2011
+                    %h2 Excursions touristiques: ...
+                %li
+                  %a{:href => "/actu/Vous-avez-aime-voyager-avec-Les-Cars-Rouges-et-le-faites-savoir--147.html"}
+                    %span.date 02.01.2011
+                    %h2 Vous avez aim&eacute; voyager av...
+                %li
+                  %a{:href => "/actu/Une-exposition-givree-qui-ne-laisse-pas-de-glace--142.html"}
+                    %span.date 21.12.2010
+                    %h2 Une exposition givr&eacute;e qui...
+                %li
+                  %a{:href => "/actu/Couverts-pour-l-hiver-avec-Les-Cars-Rouges-131.html"}
+                    %span.date 01.12.2010
+                    %h2 Couverts pour l'hiver ave...
+                %li
+                  %a{:href => "/actu/Feerie-de-Noel-dans-les-grands-magasins-127.html"}
+                    %span.date 01.12.2010
+                    %h2 F&eacute;erie de No&euml;l dans les g...
+                %li
+                  %a{:href => "/actu/Les-marches-de-Noel-de-la-Capitale-126.html"}
+                    %span.date 01.12.2010
+                    %h2 Les march&eacute;s de No&euml;l de la...
+                %li
+                  %a{:href => "/actu/Architecture-et-bande-dessinee-une-expo-a-ne-pas-manquer-122.html"}
+                    %span.date 17.10.2010
+                    %h2 Architecture et bande des...
+                %li
+                  %a{:href => "/actu/Transports-publics-perturbations-attendues-pour-la-journee-du-12-octobre-120.html"}
+                    %span.date 11.10.2010
+                    %h2 Transports publics : pert...
+                %li
+                  %a{:href => "/actu/En-bus-et-en-velo-votre-visite-de-Paris-sera-complete--118.html"}
+                    %span.date 27.09.2010
+                    %h2 En bus et en v&eacute;lo : votre...
+                %li
+                  %a{:href => "/actu/Decouvrez-le-Musee-d-Art-Moderne-de-Paris-116.html"}
+                    %span.date 26.09.2010
+                    %h2 D&eacute;couvrez le Mus&eacute;e d'Art ...
+                %li
+                  %a{:href => "/actu/Dimanche-26-septembre-course-Paris-Versailles-114.html"}
+                    %span.date 22.09.2010
+                    %h2 Dimanche 26 septembre : c...
+                %li
+                  %a{:href => "/actu/Amateurs-d-Art-Contemporain-ne-manquez-pas-Nuit-Blanche--112.html"}
+                    %span.date 20.09.2010
+                    %h2 Amateurs d'Art Contempora...
+                %li
+                  %a{:href => "/actu/Festival-Alliances-en-resonnance-le-Perou-est-a-l-honneur--110.html"}
+                    %span.date 20.09.2010
+                    %h2 Festival Alliances en r&eacute;s...
+                %li
+                  %a{:href => "/actu/Jamais-perdu-avec-Les-Cars-Rouges-108.html"}
+                    %span.date 01.09.2010
+                    %h2 Jamais perdu avec Les Car...
+                %li
+                  %a{:href => "/actu/Pour-les-enfants-en-visite-a-Paris-106.html"}
+                    %span.date 30.08.2010
+                    %h2 Pour les enfants en visit...
+                %li
+                  %a{:href => "/actu/Un-tour-de-Paris-en-bus-toutes-les-8-minutes-104.html"}
+                    %span.date 30.08.2010
+                    %h2 Un tour de Paris en bus t...
+                %li
+                  %a{:href => "/actu/Romantisme-a-Paris-le-Pont-des-Arts-102.html"}
+                    %span.date 22.08.2010
+                    %h2 Romantisme &agrave; Paris : le P...
+                %li
+                  %a{:href => "/actu/Des-sites-web-utiles-pour-visiter-Paris-100.html"}
+                    %span.date 22.08.2010
+                    %h2 Des sites web utiles pour...
+                %li
+                  %a{:href => "/actu/Willy-Ronis-est-expose-a-Paris-jusqu-au-22-aout-98.html"}
+                    %span.date 06.08.2010
+                    %h2 Willy Ronis est expos&eacute; &agrave; ...
+                %li
+                  %a{:href => "/actu/Un-tour-de-Paris-en-bus-toutes-les-6-minutes--96.html"}
+                    %span.date 04.08.2010
+                    %h2 Un tour de Paris en bus t...
+                %li
+                  %a{:href => "/actu/Prenez-le-bus-pour-aller-a-Paris-Plages--94.html"}
+                    %span.date 02.08.2010
+                    %h2 Prenez le bus pour aller ...
+                %li
+                  %a{:href => "/actu/Fete-Nationale-du-14-juillet-a-Paris-92.html"}
+                    %span.date 12.07.2010
+                    %h2 F&ecirc;te Nationale du 14 juil...
+                %li
+                  %a{:href => "/actu/Faites-les-soldes-a-Paris-avec-Les-Cars-Rouges-90.html"}
+                    %span.date 11.07.2010
+                    %h2 Faites les soldes &agrave; Paris...
+                %li
+                  %a{:href => "/actu/Balade-dans-le-Marche-aux-fleurs-de-l-Ile-de-la-Cite-88.html"}
+                    %span.date 04.07.2010
+                    %h2 Balade dans le March&eacute; aux...
+                %li
+                  %a{:href => "/actu/Avant-votre-visite-de-Paris-avec-Les-Cars-Rouges-83.html"}
+                    %span.date 30.06.2010
+                    %h2 Avant votre visite de Par...
+                %li
+                  %a{:href => "/actu/Fete-du-Cinema-jusqu-au-vendredi-2-juillet-81.html"}
+                    %span.date 28.06.2010
+                    %h2 F&ecirc;te du Cin&eacute;ma jusqu'au v...
+                %li
+                  %a{:href => "/actu/Fete-de-la-Musique-se-balader-a-Paris-avec-Les-Cars-Rouges-79.html"}
+                    %span.date 20.06.2010
+                    %h2 F&ecirc;te de la Musique : se b...
+                %li
+                  %a{:href => "/actu/Que-faire-autour-de-la-Tour-Eiffel--77.html"}
+                    %span.date 31.05.2010
+                    %h2 Que faire autour de la To...
+                %li
+                  %a{:href => "/actu/Ce-week-end-a-Paris-Nature-Capitale-sur-l-avenue-des-Champs-Elysees-75.html"}
+                    %span.date 19.05.2010
+                    %h2 Ce week-end &agrave; Paris Natur...
+                %li
+                  %a{:href => "/actu/Les-Cars-Rouges-vous-souhaitent-une-excellente-visite-de-Paris--73.html"}
+                    %span.date 19.05.2010
+                    %h2 Les Cars Rouges vous souh...
+                %li
+                  %a{:href => "/actu/Visite-de-l-Opera-Garnier-a-Paris-les-Cars-Rouges-vous-y-emmenent--71.html"}
+                    %span.date 16.05.2010
+                    %h2 Visite de l'Op&eacute;ra Garnier...
+                %li
+                  %a{:href => "/actu/La-Nuit-des-Musees-samedi-15-mai-a-Paris-preparez-votre-soiree--69.html"}
+                    %span.date 10.05.2010
+                    %h2 La Nuit des Mus&eacute;es : same...
+                %li
+                  %a{:href => "/actu/Paris-se-visite-en-bus-et-en-bateau--67.html"}
+                    %span.date 10.05.2010
+                    %h2 Paris se visite en bus......
+                %li
+                  %a{:href => "/actu/Versailles-Paris-achetez-des-billets-couples-65.html"}
+                    %span.date 09.05.2010
+                    %h2 Versailles + Paris : ache...
+                %li
+                  %a{:href => "/actu/Les-Cars-Rouges-vous-emmenent-a-Notre-Dame-de-Paris-63.html"}
+                    %span.date 03.05.2010
+                    %h2 Les Cars Rouges vous emm&egrave;...
+                %li
+                  %a{:href => "/actu/Deux-expositions-a-Paris-Izis-et-Munch-accessibles-par-notre-circuit-61.html"}
+                    %span.date 21.04.2010
+                    %h2 Deux expositions &agrave; Paris,...
+                %li
+                  %a{:href => "/actu/Paris-la-nuit-les-illuminations-de-Paris-a-bord-de-nos-bus-a-imperiale-59.html"}
+                    %span.date 19.04.2010
+                    %h2 Paris la nuit : les illum...
+                %li
+                  %a{:href => "/actu/Horaires-d-avril-programmez-votre-visite-de-Paris--57.html"}
+                    %span.date 12.04.2010
+                    %h2 Horaires d'avril - progra...
+                %li
+                  %a{:href => "/actu/Excursions-hors-Paris-et-croisieres-sur-la-Seine-des-billets-a-acheter-a-bord-des-Cars-Rouges-55.html"}
+                    %span.date 11.04.2010
+                    %h2 Excursions hors Paris et ...
+                %li
+                  %a{:href => "/actu/Marathon-de-Paris-quelques-perturbations-sur-notre-circuit-53.html"}
+                    %span.date 07.04.2010
+                    %h2 Marathon de Paris : quelq...
+                %li
+                  %a{:href => "/actu/Joyeuses-Paques-a-Paris--51.html"}
+                    %span.date 04.04.2010
+                    %h2 Joyeuses P&acirc;ques &agrave; Paris !
+                %li
+                  %a{:href => "/actu/Visitez-Versailles-et-Paris-couplez-vos-excursions-avec-notre-circuit-49.html"}
+                    %span.date 02.04.2010
+                    %h2 Visitez Versailles et Par...
+                %li
+                  %a{:href => "/actu/Encore-plus-de-bus-pour-visiter-Paris--47.html"}
+                    %span.date 29.03.2010
+                    %h2 Encore plus de bus pour v...
+                %li
+                  %a{:href => "/actu/Attention-changement-d-horaires--37.html"}
+                    %span.date 22.03.2010
+                    %h2 Attention changement d'ho...
+                %li
+                  %a{:href => "/actu/Les-Musees-du-circuit-Les-Cars-Rouges-35.html"}
+                    %span.date 22.03.2010
+                    %h2 Les Mus&eacute;es du circuit Les...
+
+            :javascript
+              jQuery(document).ready(function(){
+              	jQuery("ul#defile").liScroll();
+              });
+              var timer = null;
+              								document.getElementById('defile').onmouseout = function() {
+              			clearInterval(timer);
+              		};
+            %p.latest
+              %a{:href => "/actu/"} Voir toutes les actualites
+            %p.partners
+              %a{:href => "http://fr.fcomfrance.com/", :target => "_blank"}
+                Visitez Versailles pour 39 e, Giverny pour 46 e et les Ch&acirc;teaux de la Loire pour 90 e. Prix Imbattable
+                %br/
+          #push3_new
+            #push3_new_top
+              #push3_new_top_left
+                #TA_rated482.TA_rated
+                  #CDSWIDFRR.widFRR
+                    %img#CDSWIDFRRIMG.widFRRIMG{:alt => "Les Cars Rouges, Paris, Ile-de-France", :src => "http://www.tripadvisor.fr/img/cdsi/img2/badges/recommended_fr-11424-2.gif"}/
+                    %var.widFRRCopy
+                      %a{:href => "http://www.tripadvisor.fr/Attraction_Review-g187147-d1008070-Reviews-Les_Cars_Rouges-Paris_Ile_de_France.html", :target => "_blank"} Les Cars Rouges
+                    / / cdsRRFCopy
+                  / / cdsFRRBadge
+              #push3_new_top_right
+                Decouvrez les principaux sites de Paris a bord des bus touristiques Les Cars Rouges. De nombreux bus a imperiale permettent de faire la visite guidee de Paris. Le tour dure 2h15 et est commente en 9 langues differentes. Le billet reste valable 2 jours consecutifs et vous pouvez donc visiter Paris a votre rythme. Avec Les Cars Rouges, faites du tourisme librement et d'une maniere originale.
+              .clear
+            .clear
+            #push3_new_bottom
+              #push3_new_bottom_left
+                .buttons-div
+                  %a.download-plan{:href => "/content/brochure/plan_carsrouges.pdf", :target => "_blank"}
+                    Telecharger
+                    %b le plan
+                  %a.more-info-btn{:href => "/content/circuit/index.php"}
+                    Plus
+                    %b d'infos
+                  .clear
+                Le circuit en
+                %b 9 arr&ecirc;ts
+                %a.link{:href => "/content/circuit/index.php"} &nbsp;
+              #push3_new_bottom_right
+                .buttons-div
+                  %a.download-brochure{:href => "/content/brochure/fr.pdf", :target => "_blank"}
+                    Telecharger
+                    %b la brochure
+                  %a.more-info-btn{:href => "/content/infos/index.php"}
+                    Plus
+                    %b d'infos
+                  .clear
+                %p.titre
+                  Les informations
+                  %b pratiques
+                %p.desc Toutes les infos pratiques pour pr&eacute;parer votre visite :
+                %ul.liste
+                  %li
+                    %a{:href => "/content/infos/ballade.php"} >La visite en quelques mots
+                  %li
+                    %a{:href => "/content/infos/horaires.php"} >Les horaires
+                  %li
+                    %a{:href => "/content/infos/audio_guides.php"} >Les audio guides
+
+
+              #push3_new_bottom_video
+                %h3
+                  Decouvrez
+                  %b le parcours
+                %span.open-video-box
+                  %img{:alt => "LABEL_INDEX_DECOUVREZ LABEL_INDEX_LE_PARCOURS", :src => "/assets/design/bg_video_parcours.jpg"}/
+                #video-player-push3_container
+                  #video-player-push3
+                    .close-video-box{:onclick => "jwplayer().stop();"}
+                      [
+                      %span> X
+                      ]
+                    %h3
+                      Decouvrez
+                      %b le parcours
+                    #video-player-push3-object
+                      %p#videolaucher Please install the Flash Plugin
+              .clear
+          / /Ligne Push Num2
+        /
+          <div id="bloc_6_bonnes_raisons">
+          <h2><img src="/_fr/img/home/h2_6_bonnes_raisons.png" alt="6 bonnes raisons de monter &amp;agrave; bord..." /></h2>
+          <ul>
+          <li><img src="/_fr/img/home/h3_picto_remise.gif" alt="" /><span>LABEL_INDEX_6BONNES_RAISONS_1</span></li>
+          <li><img src="/_fr/img/home/h3_picto_bus_horaires.gif" alt="" /><span>LABEL_INDEX_6BONNES_RAISONS_2</span></li>
+          <li><img src="/_fr/img/home/h3_picto_multi_langues.gif" alt="" /><span>LABEL_INDEX_6BONNES_RAISONS_3</span></li>
+          <li><img src="/_fr/img/home/h3_picto_pass2jours.gif" alt="" /><span>LABEL_INDEX_6BONNES_RAISONS_4</span></li>
+          <li><img src="/_fr/img/home/h3_picto_7_jours_sur_7.gif" alt="" /><span>LABEL_INDEX_6BONNES_RAISONS_5</span></li>
+          <li><img src="/_fr/img/home/h3_picto_ciel_ouvert_2h15.gif" alt="" /><span>LABEL_INDEX_6BONNES_RAISONS_6</span></li>
+          </ul>
+          </div>
+        .clear
+        #bloc_8_bonnes_raisons.static-presentation
+          %h2
+            %strong 8
+            %b bonnes raisons
+            de monter &agrave; bord...
+          %ul#bloc_8br_list
+            %li#list_8br_1
+              %a{:href => "content/billet/etape1.php"} Une remise de 10% pour tout achat en ligne
+            %li#list_8br_2.ico_fr
+              %a{:href => "content/billet/etape1.php"} Une utilisation illimitee du Pass pendant 2 jours cons&eacute;cutifs
+            %li#list_8br_3
+              %a{:href => "content/infos/ballade.php"} Une decouverte des monuments a ciel ouvert en 2h15
+            %li#list_8br_4
+              %a{:href => "content/infos/ballade.php"} Montez, descendez librement...
+            %li#list_8br_5
+              %a{:href => "content/circuit/index.php"} 9 arrets pour visiter les monuments incontournables de Paris
+            %li#list_8br_6
+              %a{:href => "content/infos/horaires.php"} Des bus toutes les 7 mn en ete et toutes les 15 mn en hiver
+            %li#list_8br_7
+              %a{:href => "content/infos/audio_guides.php"} Visite commentee en 9 langues
+            %li#list_8br_8
+              %a{:href => "content/billet/etape1.php"} Offrez-vous une croisiere sur la Seine grace a notre formule Bus&amp;Croisiere
